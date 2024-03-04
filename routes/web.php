@@ -18,5 +18,10 @@ Route::get('welcome', function () {
 });
 
 Route::get('/', function(){
-    return view('index');
+    return view('studentList');
 });
+
+Route::get('users', function(){
+    return view('saveData');
+});
+
