@@ -46,4 +46,14 @@ class StudentCrudController extends Controller
         return redirect('/');
     }
 
+    public function deleteData($id){
+        $data = Student::find($id);
+        $data->delete();
+        return redirect('/');
+    }
+
+    // public function searchData($name){
+    //     $data = Student::find(); 
+    // }
+
 }

@@ -64,9 +64,9 @@
                     <option value="Dip.Business Information Technology">Dip.Business Information Technology</option>
                     <option value="Bsc.Business Administration">Bsc.Business Administration</option>
                     <option value="Bsc.Accounting">Bsc.Accounting</option>
-                    <option value="B.EdInformation Technology">B.EdInformation Technology</option>
-                    <option value="B.EdTheological Studies">B.EdTheological Studies</option>
-                    <option value="B.EdDevelopment Studies">B.EdDevelopment Studies</option>
+                    <option value="B.EdInformation Technology">B.Ed Information Technology</option>
+                    <option value="B.EdTheological Studies">B.Ed Theological Studies</option>
+                    <option value="B.EdDevelopment Studies">B.Ed Development Studies</option>
                     <option value="Dip.Development Studies">Dip.Development Studies</option>
                     <option value="B.Ed Accounting">B.Ed Accounting</option>
                     <option value="B.Ed Religion">B.Ed Religion</option>

@@ -84,7 +84,7 @@
                     <option value="Dip. Midwifery">Dip. Midwifery</option>
                 </select>
                </div><br>
-               <button type="submit">Edit Student</button>
+               <button type="submit">Update Student</button>
             </form>
         </div>
     </div>

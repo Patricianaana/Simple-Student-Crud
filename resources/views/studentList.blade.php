@@ -20,17 +20,23 @@
     </div>
     <br>
     <div>
+        <form action="/search" method="get">
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+        <br>
         <table border="5">
             <tr>
-                <td>ID</td>
-                <td>Name</td>
-                <td>Age</td>
-                <td>Email</td>
-                <td>Address</td>
-                <td>Contact</td>
-                <td>Department</td>
-                <td>Program</td>
-                <td>Actions</td>
+                <td style="font-weight:bold">ID</td>
+                <td style="font-weight:bold">Name</td>
+                <td style="font-weight:bold">Age</td>
+                <td style="font-weight:bold">Email</td>
+                <td style="font-weight:bold">Address</td>
+                <td style="font-weight:bold">Contact</td>
+                <td style="font-weight:bold">Department</td>
+                <td style="font-weight:bold">Program</td>
+                <td style="font-weight:bold">Actions</td>
             </tr>
             
             @foreach($users as $user)
