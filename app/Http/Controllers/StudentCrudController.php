@@ -27,4 +27,23 @@ class StudentCrudController extends Controller
         $data = Student::all();
         return view('studentList',['users'=>$data]);
     }
+
+    public function editData($id){
+        $data = Student::find($id);
+        return view('editStudent',['data'=>$data]);
+    }
+
+    public function updateData(Request $req){
+        $data = Student::find($req->id);
+        $data->name=$req->name;
+        $data->age=$req->age;
+        $data->email=$req->email;
+        $data->contact=$req->contact;
+        $data->address=$req->address;
+        $data->department=$req->department;
+        $data->program=$req->program;
+        $data->save();
+        return redirect('/');
+    }
+
 }

@@ -29,3 +29,5 @@ Route::get('users', function(){
 
 Route::post('users',[StudentCrudController::class, 'addStudent']);//for create
 Route::get('/',[StudentCrudController::class, 'viewStudent']);//for read
+Route::get('edit/{id}',[StudentCrudController::class,'editData']);//for edit
+Route::post('/edit',[StudentCrudController::class,'updateData']);//for update

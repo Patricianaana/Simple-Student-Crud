@@ -1,0 +1,9 @@
+                    <option value="{{ $data['id'] }}">Computer Science</option>>
+                    <option value="{{ $data['id'] }}">Business</option>
+                    <option value="{{ $data['id'] }}">Nursing & Midwifery</option>
+                    <option value="{{ $data['id'] }}">Theology & Missions </option>
+                    <option value="{{ $data['id'] }}">Development Studies</option>
+                    <option value="{{ $data['id'] }}">Music</option>
+                    <option value="{{ $data['id'] }}">Mathematics</option>
+                    <option value="{{ $data['id'] }}">Biomedical Technology</option>
+                    <option value="{{ $data['id'] }}">Languages</option>
