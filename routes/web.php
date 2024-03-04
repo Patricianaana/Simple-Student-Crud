@@ -28,3 +28,4 @@ Route::get('users', function(){
 
 
 Route::post('users',[StudentCrudController::class, 'addStudent']);//for create
+Route::get('/',[StudentCrudController::class, 'viewStudent']);//for read
