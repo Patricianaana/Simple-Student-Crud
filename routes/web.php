@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\StudentCrudController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,5 @@ Route::get('users', function(){
     return view('saveData');
 });
 
+
+Route::post('users',[StudentCrudController::class, 'addStudent']);//for create
