@@ -32,53 +32,57 @@
                 <input type="text" name="email" placeholder="Enter email here"><br><br>
                </div>
                <div>
+                <label>Address</label><br>
+                <input type="text" name="address" placeholder="Enter address here"><br><br>
+               </div>
+               <div>
                 <label>Contact</label><br>
                 <input type="text" name="contact" placeholder="Enter contact here"><br><br>
                </div>
                <div>
                 <label for="department">Select Department</label><br>
                 <select name="department" id="department">
-                    <option value="department">Computer Science</option>>
-                    <option value="department">Business</option>
-                    <option value="department">Nursing & Midwifery</option>
-                    <option value="department">Theology & Missions </option>
-                    <option value="department">Development Studies</option>
-                    <option value="department">Music</option>
-                    <option value="department">Mathematics</option>
-                    <option value="department">Biomedical Technology</option>
-                    <option value="department">Languages</option>
+                    <option value="Computer Science">Computer Science</option>>
+                    <option value="Business">Business</option>
+                    <option value="Nursing & Midwifery">Nursing & Midwifery</option>
+                    <option value="Theology & Missions ">Theology & Missions </option>
+                    <option value="Development Studies">Development Studies</option>
+                    <option value="Music">Music</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Biomedical Technology">Biomedical Technology</option>
+                    <option value="Languages">Languages</option>
                 </select>
                </div><br>
                <div>
                 <label for="program">Select Program</label><br>
                 <select name="program" id="program" aria-placeholder="Select Program">
-                    <option value="program">Bsc.Computer Science</option>
-                    <option value="program">Dip.Computer Science</option>
-                    <option value="program">Bsc.Information Technology</option>
-                    <option value="program">Dip.Information Technology</option>
-                    <option value="program">Bsc.Business Information Technology</option>
-                    <option value="program">Dip.Business Information Technology</option>
-                    <option value="program">Bsc.Business Administration</option>
-                    <option value="program">Bsc.Accounting</option>
-                    <option value="program">B.EdInformation Technology</option>
-                    <option value="program">B.EdTheological Studies</option>
-                    <option value="program">B.EdDevelopment Studies</option>
-                    <option value="program">Dip.Development Studies</option>
-                    <option value="program">B.Ed Accounting</option>
-                    <option value="program">B.Ed Religion</option>
-                    <option value="program">B.Ed Management</option>
-                    <option value="program">B.Ed Music</option>
-                    <option value="program">Diploma Music</option>
-                    <option value="program">Bsc. Biomedical Equiment Technology</option>
-                    <option value="program">Dip. Biomedical Equipment Technology</option>
-                    <option value="program">B.Ed Mathematics</option>
-                    <option value="program">B.Ed English</option>
-                    <option value="program">Bsc. Nursing</option>
-                    <option value="program">Dip Nursing</option>
-                    <option value="program">Bsc. Midwifery</option>
-                    <option value="program">Dip. Midwifery</option>
+                    <option value="Bsc.Computer Science">Bsc.Computer Science</option>
+                    <option value="Dip.Computer Science">Dip.Computer Science</option>
+                    <option value="Bsc.Information Technology">Bsc.Information Technology</option>
+                    <option value="Dip.Information Technology">Dip.Information Technology</option>
+                    <option value="Bsc.Business Information Technology">Bsc.Business Information Technology</option>
+                    <option value="Dip.Business Information Technology">Dip.Business Information Technology</option>
+                    <option value="Bsc.Business Administration">Bsc.Business Administration</option>
+                    <option value="Bsc.Accounting">Bsc.Accounting</option>
+                    <option value="B.EdInformation Technology">B.EdInformation Technology</option>
+                    <option value="B.EdTheological Studies">B.EdTheological Studies</option>
+                    <option value="B.EdDevelopment Studies">B.EdDevelopment Studies</option>
+                    <option value="Dip.Development Studies">Dip.Development Studies</option>
+                    <option value="B.Ed Accounting">B.Ed Accounting</option>
+                    <option value="B.Ed Religion">B.Ed Religion</option>
+                    <option value="B.Ed Management">B.Ed Management</option>
+                    <option value="B.Ed Music">B.Ed Music</option>
+                    <option value="Diploma Music">Diploma Music</option>
+                    <option value="Bsc. Biomedical Equiment Technology">Bsc. Biomedical Equiment Technology</option>
+                    <option value="Dip. Biomedical Equipment Technology">Dip. Biomedical Equipment Technology</option>
+                    <option value="B.Ed Mathematics">B.Ed Mathematics</option>
+                    <option value="B.Ed English">B.Ed English</option>
+                    <option value="Bsc. Nursing">Bsc. Nursing</option>
+                    <option value="Dip Nursing">Dip Nursing</option>
+                    <option value="Bsc. Midwifery">Bsc. Midwifery</option>
+                    <option value="Dip. Midwifery">Dip. Midwifery</option>
                 </select>
-               </div>
+               </div><br>
                <button type="submit">Add Student</button>
             </form>
         </div>
