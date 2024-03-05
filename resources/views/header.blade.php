@@ -7,9 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <header style="background-color:rgb(209, 204, 204); width: 100%;">
-        <h1 style="color:green">Student CRUD Management System</h1>
-    </header>
-   
+    <div class="container-fluid">
+        <header style="background-color:rgb(209, 204, 204); width: 100%;">
+            <h1 style="color:green">Student CRUD Management System</h1>
+        </header>
+    </div>
 </body>
 </html>

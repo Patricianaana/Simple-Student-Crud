@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Edit Student</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     @include('header')
@@ -20,27 +20,52 @@
             <form action="/edit" method="POST">
                 @csrf
                 <input type="hidden" name="id" value="{{ $data['id'] }}">
-               <div>
-                <label>Full Name</label><br>
-                <input type="text" name="name" value="{{ $data['name'] }}"><br><br>
-               </div>
-               <div>
-                <label>Age</label><br>
-                <input type="number" name="age" value="{{ $data['age'] }}"><br><br>
-               </div>
-               <div>
-                <label>Email</label><br>
-                <input type="text" name="email" value="{{ $data['email'] }}"><br><br>
-               </div>
-               <div>
-                <label>Address</label><br>
-                <input type="text" name="address" value="{{ $data['address'] }}"><br><br>
-               </div>
-               <div>
-                <label>Contact</label><br>
-                <input type="text" name="contact" value="{{ $data['contact'] }}"><br><br>
-               </div>
-               <div>
+                <div>
+                    <label>Full Name</label><br>
+                    <input type="text" name="name" placeholder="Enter name here" value="{{ $data['name'] }}"><br>
+                    @error('name')
+                    <span style="color: red">
+                        {{ $message }}
+                    </span>
+                    @enderror
+                   </div>
+                   <div>
+                    <label>Age</label><br>
+                    <input type="number" name="age" placeholder="Enter age here" value="{{ $data['age'] }}"><br> 
+                    @error('age')
+                    <span style="color: red">
+                        {{ $message }}
+                    </span>
+                    @enderror
+                   </div>
+                   <div>
+                    <label>Email</label><br>
+                    <input type="text" name="email" placeholder="Enter email here" value="{{ $data['email'] }}"><br>
+                    @error('email')
+                    <span style="color: red">
+                        {{ $message }}
+                    </span>
+                    @enderror
+                   </div>
+                   <div>
+                    <label>Address</label><br>
+                    <input type="text" name="address" placeholder="Enter address here" value="{{ $data['address'] }}"><br>
+                    @error('address')
+                    <span style="color: red">
+                        {{ $message }}
+                    </span>
+                    @enderror
+                   </div>
+                   <div>
+                    <label>Contact</label><br>
+                    <input type="text" name="contact" placeholder="Enter contact here" value="{{ $data['contact'] }}"><br>
+                    @error('contact')
+                    <span style="color: red">
+                        {{ $message }}
+                    </span>
+                    @enderror
+                   </div>           
+                <div>
                 <label for="department">Select Department</label><br>
                 <select name="department" id="department">
                     <option value="Computer Science">Computer Science</option>>
@@ -84,11 +109,11 @@
                     <option value="Dip. Midwifery">Dip. Midwifery</option>
                 </select>
                </div><br>
-               <button type="submit">Update Student</button>
+               <button type="submit" class="btn btn-primary">Update Data</button>
             </form>
         </div>
     </div>
     
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
 </body>
 </html>

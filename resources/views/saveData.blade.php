@@ -5,39 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Add Student</title>
-    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     @include('header')
     <div>
         <h3 style="text-align: center; margin-bottom:10px;">Add student</h3>
     </div>
-    <div style="display: flex; width: 100%; height: 100%; background-color: rgb(186, 219, 184)" >
-        <div>
+    {{-- <div class="d-flex flex-row bd-highlight mb-3" > --}}
+        {{-- <div class="p-2 bd-highlight">
             <img src="{{ asset('images/stud.jpg') }}" alt="Image of student" style="width: 50%; margin-left:5%;">
-        </div>
-        <div style="margin-right: 5%; background-color: rgb(209, 204, 204)">
+        </div> --}}
+        <div class="container-fluid">
             <form action="users" method="POST">
                 @csrf
                <div>
                 <label>Full Name</label><br>
-                <input type="text" name="name" placeholder="Enter name here"><br><br>
+                <input type="text" name="name" placeholder="Enter name here"><br>
+                @error('name')
+                <span style="color: red">
+                    {{ $message }}
+                </span>
+                @enderror
                </div>
                <div>
                 <label>Age</label><br>
-                <input type="number" name="age" placeholder="Enter age here"><br><br>
+                <input type="number" name="age" placeholder="Enter age here"><br> 
+                @error('age')
+                <span style="color: red">
+                    {{ $message }}
+                </span>
+                @enderror
                </div>
                <div>
                 <label>Email</label><br>
-                <input type="text" name="email" placeholder="Enter email here"><br><br>
+                <input type="text" name="email" placeholder="Enter email here"><br>
+                @error('email')
+                <span style="color: red">
+                    {{ $message }}
+                </span>
+                @enderror
                </div>
                <div>
                 <label>Address</label><br>
-                <input type="text" name="address" placeholder="Enter address here"><br><br>
+                <input type="text" name="address" placeholder="Enter address here"><br>
+                @error('address')
+                <span style="color: red">
+                    {{ $message }}
+                </span>
+                @enderror
                </div>
                <div>
                 <label>Contact</label><br>
-                <input type="text" name="contact" placeholder="Enter contact here"><br><br>
+                <input type="text" name="contact" placeholder="Enter contact here"><br>
+                @error('contact')
+                <span style="color: red">
+                    {{ $message }}
+                </span>
+                @enderror
                </div>
                <div>
                 <label for="department">Select Department</label><br>
@@ -83,11 +108,11 @@
                     <option value="Dip. Midwifery">Dip. Midwifery</option>
                 </select>
                </div><br>
-               <button type="submit">Add Student</button>
+               <button type="submit" class="btn btn-primary">Add Student</button>
             </form>
         </div>
-    </div>
+    {{-- </div> --}}
     
-    {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
