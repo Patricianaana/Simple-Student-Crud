@@ -20,12 +20,13 @@ class StudentCrudController extends Controller
         $user->save();
         //redirect user to index to view student list
         return redirect('/');
-    }
+    }   
 
     //for read
     public function viewStudent(){
         $data = Student::all();
-        return view('studentList',['users'=>$data]);
+        return view('studentList',compact('data'));
+        // return view('studentList',['users'=>$data]);
     }
 
     public function editData($id){
@@ -52,8 +53,17 @@ class StudentCrudController extends Controller
         return redirect('/');
     }
 
-    // public function searchData($name){
-    //     $data = Student::find(); 
-    // }
-
+    public function searchData(Request $req)
+    {
+        $search = $req->input('search');
+        $data = Student::where('name','like','%'.$search.'%')
+                       ->orWhere('age','like','%'.$search.'%')
+                       ->orWhere('email','like','%'.$search.'%')
+                       ->orWhere('contact','like','%'.$search.'%')
+                       ->orWhere('address','like','%'.$search.'%')
+                       ->orWhere('department','like','%'.$search.'%')
+                       ->orWhere('program','like','%'.$search.'%')
+                       ->get();
+        return view('studentList',compact('data','search'));
+    }
 }

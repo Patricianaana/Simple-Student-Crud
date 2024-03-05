@@ -19,13 +19,13 @@
         <a href="users">Add</a>
     </div>
     <br>
+    <form action="/search" method="get">
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search..." value="{{ isset($search) ? $search : ''}}">
+        <button type="submit">Search</button>
+    </form>
+    <br>
     <div>
-        <form action="/search" method="get">
-            <label for="search">Search:</label>
-            <input type="search" id="search" name="search" placeholder="Search...">
-            <button type="submit">Search</button>
-        </form>
-        <br>
         <table border="5">
             <tr>
                 <td style="font-weight:bold">ID</td>
@@ -39,7 +39,7 @@
                 <td style="font-weight:bold">Actions</td>
             </tr>
             
-            @foreach($users as $user)
+            @foreach($data as $user)
             <tr>
                 <td>{{$user['id']}}</td>
                 <td>{{$user['name']}}</td>
@@ -51,7 +51,7 @@
                 <td>{{$user['program']}}</td>
                 <td><a href="{{'edit/'.$user['id']}}">Edit</a></td>
                 <td><a href="{{'delete/'.$user['id']}}">Delete</a></td>
-                <td><a href="{{'view/'.$user['id']}}">View</a></td>
+                {{-- <td><a href="{{'view/'.$user['id']}}">View</a></td> --}}
             </tr>
             @endforeach
         </table>
