@@ -22,7 +22,7 @@
                 <input type="hidden" name="id" value="{{ $data['id'] }}">
                 <div>
                     <label>Full Name</label><br>
-                    <input type="text" name="name" placeholder="Enter name here" value="{{ $data['name'] }}"><br>
+                    <input type="text" name="name" value="{{ $data['name'] }}"><br>
                     @error('name')
                     <span style="color: red">
                         {{ $message }}
@@ -31,7 +31,7 @@
                    </div>
                    <div>
                     <label>Age</label><br>
-                    <input type="number" name="age" placeholder="Enter age here" value="{{ $data['age'] }}"><br> 
+                    <input type="number" name="age" value="{{ $data['age'] }}"><br> 
                     @error('age')
                     <span style="color: red">
                         {{ $message }}
@@ -40,7 +40,7 @@
                    </div>
                    <div>
                     <label>Email</label><br>
-                    <input type="text" name="email" placeholder="Enter email here" value="{{ $data['email'] }}"><br>
+                    <input type="text" name="email" value="{{ $data['email'] }}"><br>
                     @error('email')
                     <span style="color: red">
                         {{ $message }}
@@ -49,7 +49,7 @@
                    </div>
                    <div>
                     <label>Address</label><br>
-                    <input type="text" name="address" placeholder="Enter address here" value="{{ $data['address'] }}"><br>
+                    <input type="text" name="address" value="{{ $data['address'] }}"><br>
                     @error('address')
                     <span style="color: red">
                         {{ $message }}
@@ -58,7 +58,7 @@
                    </div>
                    <div>
                     <label>Contact</label><br>
-                    <input type="text" name="contact" placeholder="Enter contact here" value="{{ $data['contact'] }}"><br>
+                    <input type="text" name="contact" value="{{ $data['contact'] }}"><br>
                     @error('contact')
                     <span style="color: red">
                         {{ $message }}
