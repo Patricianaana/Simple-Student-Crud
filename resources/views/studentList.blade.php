@@ -19,6 +19,13 @@
         <td><a href="users"><button type="submit" class="btn btn-primary">Add New</button></a></td>
     </div>
     <br>
+    {{-- <div class="input-group mb-3">
+        <form action="/search" method="get">
+            <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+            <input type="search" class="form-control" placeholder="Search..." aria-label="search" aria-describedby="basic-addon1">
+            <button type="submit" class="btn btn-secondary">Search</button>
+        </form>
+      </div> --}}
     <div class="container-fluid">
         <form action="/search" method="get">
             <label for="search">Search:</label>
@@ -53,7 +60,7 @@
                 <td>{{$user['department']}}</td>
                 <td>{{$user['program']}}</td>
                 <td><a href="{{'edit/'.$user['id']}}"><button type="button" class="btn btn-success">Edit</button></a></td>
-                <td><a href="{{'hide/'.$user['id']}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+                <td><a href="{{'delete/'.$user['id']}}"><button type="button" class="btn btn-danger">Delete</button></a></td>
                 
                 {{-- <td><a href="{{'view/'.$user['id']}}">View</a></td> --}}
             </tr>

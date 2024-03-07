@@ -16,7 +16,7 @@
         {{-- <div class="p-2 bd-highlight">
             <img src="{{ asset('images/stud.jpg') }}" alt="Image of student" style="width: 50%; margin-left:5%;">
         </div> --}}
-        <div class="container-fluid">
+        <div class="container">
             <form action="users" method="POST">
                 @csrf
                <div>
@@ -64,9 +64,11 @@
                 </span>
                 @enderror
                </div>
-               <div>
-                <label for="department">Select Department</label><br>
-                <select name="department" id="department">
+               <br>
+               <div class="input-group mb-3">
+                <label for="department" class="input-group-text">Department</label><br>
+                <select class="form-select" name="department" id="department">
+                    <option selected>Choose department...</option>
                     <option value="Computer Science">Computer Science</option>>
                     <option value="Business">Business</option>
                     <option value="Nursing & Midwifery">Nursing & Midwifery</option>
@@ -78,9 +80,10 @@
                     <option value="Languages">Languages</option>
                 </select>
                </div><br>
-               <div>
-                <label for="program">Select Program</label><br>
-                <select name="program" id="program" aria-placeholder="Select Program">
+               <div class="input-group mb-3">
+                <label class="input-group-text" for="program">Program</label><br>
+                <select name="program" id="program" class="form-select">
+                    <option selected>Choose program...</option>
                     <option value="Bsc.Computer Science">Bsc.Computer Science</option>
                     <option value="Dip.Computer Science">Dip.Computer Science</option>
                     <option value="Bsc.Information Technology">Bsc.Information Technology</option>
